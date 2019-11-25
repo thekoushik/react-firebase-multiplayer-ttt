@@ -106,16 +106,16 @@ export class Game extends React.Component<IProp,IState> {
         this.setState({restarted:true});
     }
     render(){
-        let {myTurn,turn,board,lastx,lasty,won,want_restart,my_score,his_score}=this.state;
+        let {imChallenger,myTurn,turn,board,lastx,lasty,won,want_restart,my_score,his_score}=this.state;
         return <div className="Game">
             {
                 won!=='none'?<h4 className="card-title text-primary text-center mb-1">{
                     won==='win'?'You Won':( won==='draw'?'Draw':'You Lost')
-                }</h4>:<p className="text-center mb-1">{
-                    myTurn?'My Turn':"Opponent's Turn"
+                }</h4>:<p className="text-right mb-1">{
+                    myTurn?('My Turn ('+(imChallenger?' X )':' O )')):("Opponent's Turn ("+(imChallenger?' O )':' X )'))
                 }</p>
             }
-            <h4 className="text-center mb-1">{my_score} - {his_score}</h4>
+            <h4 className="text-right mb-1">{my_score} - {his_score}</h4>
             <table className="tactable">
             <tbody className="tactablebody">
             {
