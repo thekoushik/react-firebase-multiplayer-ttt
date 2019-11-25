@@ -1,0 +1,20 @@
+<svg width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+    <g>
+    <rect fill="none" id="canvas_background" height="152" width="152" y="-1" x="-1"/>
+    </g>
+    <g>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="133.60899" x2="68.13726" y1="59.49144" x1="12.45106" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="124.5894" x2="83.03921" y1="48.11891" x1="30.49025" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="115.96196" x2="103.82349" y1="39.09931" x1="50.09807" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="107.72667" x2="121.07837" y1="30.86403" x1="68.13726" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="98.70708" x2="136.76463" y1="23.41306" x1="85.7843" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="25.37384" x2="104.99996" y1="79.49142" x1="6.56871" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="34.00128" x2="114.41171" y1="92.43258" x1="11.27459" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_8" y2="47.33459" x2="121.47053" y1="104.58942" x1="20.29419" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_9" y2="59.8836" x2="130.49013" y1="119.49136" x1="26.56869" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_10" y2="74.78554" x2="139.11757" y1="132.82468" x1="37.15691" stroke-width="1.5" stroke="#7f7f7f" fill="none"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_11" y="87.7267" x="38.72554" stroke-width="0" stroke="#000" fill="#aaffff">x</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_12" y="66.94241" x="74.41177" stroke-width="0" stroke="#000" fill="#aaffff">x</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_13" y="102.62864" x="74.41177" stroke-width="0" stroke="#000" fill="#aaffff">o</text>
+ </g>
+</svg>

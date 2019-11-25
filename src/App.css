@@ -1,0 +1,101 @@
+.OuterPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background: linear-gradient(-45deg, #272727, #0d1013, #2b5465, #093c86);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.hidden{
+  display: none;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.App-header{
+  text-align: center;
+}
+.MainPage .right-pad{
+  padding-right: 50px;
+}
+.MainPage .userphoto{
+  width: 60px;
+}
+.MainPage button.signout{
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+}
+.MainPage button.back-btn{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+.UserList{
+  position: fixed;
+  width: 82px;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+.UserList img.photo-item{
+  width: 60px;
+}
+.UserList .list-group{
+  height: 100%;
+  background: #0000004f;
+}
+.UserList button.list-group-item{
+  padding: 5px;
+}
+.UserList button.list-group-item.selected{
+  
+}
+.UserList button.list-group-item span.game-mode{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: transparent;
+}
+.UserList button.list-group-item.selected span.game-mode{
+  display: none;
+}
+.UserList button.list-group-item span.game-mode.game-mode-running-own{
+  background: #4caf50;
+}
+.UserList button.list-group-item span.game-mode.game-mode-running-other{
+  background: #f38c2c;
+}
+.Game table.tactable{
+  width: 90vmin;
+  height: 90vmin;
+  margin: auto;
+}
+.Game tbody.tactablebody{
+  border-top: 1px solid #a8a8a8;
+}
+.Game .tacrow{
+  border-left: 1px solid #a8a8a8;
+}
+.Game .tac{
+  text-align: center;
+  border-right: 1px solid #a8a8a8;
+  border-bottom: 1px solid #a8a8a8;
+}
+.Game .mt20{
+  margin-top: 12px;
+}
