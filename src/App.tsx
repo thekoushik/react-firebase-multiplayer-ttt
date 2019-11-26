@@ -32,6 +32,7 @@ const App = ({
         console.log('uid',user.uid);
         Cache.addUser(user.uid,user.displayName,user.photoURL).then((data)=>{
           //console.log('val',data);
+          Cache.getUsersRef().child(user.uid+'/online').onDisconnect().set(false);
         }).catch((e)=>{
           console.log("Error",e);
         })

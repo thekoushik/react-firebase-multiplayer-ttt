@@ -17,9 +17,10 @@ export class TicTacToe{
     }
     put(val:'x'|'o',x:number,y:number){
         this._array[x][y]=val;
-        return (1+this.traverse(x,y,-1,-1)+this.traverse(x,y,0,-1)+this.traverse(x,y,1,-1)+
-         this.traverse(x,y,1,0)+this.traverse(x,y,1,1)+this.traverse(x,y,0,1)+
-         this.traverse(x,y,-1,1)+this.traverse(x,y,-1,0)>=this._winlength);
+        return ((1+this.traverse(x,y,-1,-1)+this.traverse(x,y,1,1))>=this._winlength ||
+             (1+this.traverse(x,y,0,-1)+this.traverse(x,y,0,1))>=this._winlength ||
+             (1+this.traverse(x,y,1,-1)+this.traverse(x,y,-1,1))>=this._winlength ||
+             (1+this.traverse(x,y,1,0)+this.traverse(x,y,-1,0))>=this._winlength );
     }
     get array(){
         return this._array;

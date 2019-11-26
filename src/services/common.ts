@@ -40,10 +40,13 @@ export const Cache:CacheStruct={
                 if(!val){
                     res(Cache.getUsersRef().child(id).set({
                         name,
-                        photo
+                        photo,
+                        online:true
                     }));
-                }else
+                }else{
+                    Cache.getUsersRef().child(id+'/online').set(true);
                     res(val);
+                }
             }).catch((e)=>{
                 rej(e);
             })

@@ -28,7 +28,10 @@ export class MainPage extends React.Component<IProps, IState>{
             let imChallenger=(Cache.user===data.game_data.challenger_id);
             let ownScore= imChallenger?data.game_data['val-'+data.game_data.challenger_id]:data.game_data['val-'+data.game_data.player_id];
             let opponentScore= imChallenger?data.game_data['val-'+data.game_data.player_id]:data.game_data['val-'+data.game_data.challenger_id];
-            this.setState({selectedUser:{...data},ownScore,opponentScore});
+            if(this.state.inGame){
+                this.setState({ownScore,opponentScore});
+            }else
+                this.setState({selectedUser:{...data},ownScore,opponentScore});
         }else
             this.setState({selectedUser:{...data},ownScore:0,opponentScore:0});
     }
@@ -66,7 +69,7 @@ export class MainPage extends React.Component<IProps, IState>{
                                     }
                                     
                                 </div>
-                            </div>:<div className="jumbotron jumbotron-fluid">
+                            </div>:<div className="jumbotron jumbotron-fluid pb-1">
                                 <div className="container">
                                     <img className="userphoto" src={user.photoURL} />
                                     <h1>Welcome</h1>
@@ -75,6 +78,11 @@ export class MainPage extends React.Component<IProps, IState>{
                                 </div>
                             </div>
                         }
+                    </div>
+                    <div className={"col-12 "+(selectedUser?'mt-4':'')}>
+                        <div className="jumbotron jumbotron-fluid p-4 pb-1 bg-success">
+                            <p className="lead mb-0 text-justify">This is a 10x10 tic tac toe game where players should make 5 consecutive pieces anywhere in the board to win.</p>
+                        </div>
                     </div>
                 </div>)
             }

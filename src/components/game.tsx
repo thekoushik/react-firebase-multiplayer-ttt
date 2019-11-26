@@ -63,7 +63,7 @@ export class Game extends React.Component<IProp,IState> {
         })
     }
     componentWillUnmount(){
-        //console.log('game unmount');
+        //console.log('game unmount',this.props.game_id);
         Cache.getGamesRef().child(this.props.game_id).off();
     }
     onPlay(i:number,j:number){
@@ -85,10 +85,10 @@ export class Game extends React.Component<IProp,IState> {
             want_restart
         };
         if(win) updatedData['val-'+Cache.user]=my_score+1;
-        Cache.getGamesRef().child(game_id).update(updatedData);
         this.setState({
             myTurn:false
         });
+        Cache.getGamesRef().child(game_id).update(updatedData);
     }
     onRestart(){
         let {want_restart,restarted} = this.state;

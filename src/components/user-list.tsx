@@ -70,7 +70,7 @@ export class UserList extends React.Component<UserListProps,UserListState>{
         });
     }
     componentWillUnmount(){
-        console.log('user list unmount');
+        //console.log('user list unmount');
         Cache.getUsersRef().off();
         Cache.getGamesRef().off();
     }
@@ -84,7 +84,7 @@ export class UserList extends React.Component<UserListProps,UserListState>{
         return <div className={"UserList "+this.props.className}>
             <div className="list-group">
                 {
-                    user_list.map((m:any,i:number)=><button onClick={()=>this.onClick(m)} type="button" key={i} className={"list-group-item list-group-item-action "+(selectedUser && selectedUser.id===m.id?"selected":"")} >
+                    user_list.map((m:any,i:number)=><button onClick={()=>this.onClick(m)} type="button" key={i} className={"list-group-item list-group-item-action "+(selectedUser && selectedUser.id===m.id?"selected":"")+(m.online?' online':'')}>
                         <span className={"game-mode game-mode-running-"+m.playing}></span>
                         <img className="photo-item" src={m.photo} />
                     </button>)
